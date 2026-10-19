@@ -1,20 +1,6 @@
 # VestFlow 📈
 
-[![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
-[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
 A modern, full-stack investment portfolio tracker and personal wealth analytics dashboard. VestFlow bridges an enterprise-grade **Spring Boot** REST backend with a reactive **React + Vite** frontend to deliver real-time asset valuation, allocation breakdowns, performance analytics, and dynamic transaction auditing.
-
----
-
-## 🖥️ Application Preview
-
-| Portfolio Dashboard | Asset Management & Ledger |
-| :---: | :---: |
-| *(Add your screenshot / GIF here: `docs/assets/dashboard.png`)* | *(Add your screenshot / GIF here: `docs/assets/transactions.png`)* |
 
 ---
 
@@ -40,16 +26,45 @@ A modern, full-stack investment portfolio tracker and personal wealth analytics 
 
 ---
 
-## 🏗️ Architecture & Data Flow
+## Tech Stack
 
-```text
-[ Browser / Client ]
-       │
-       ▼ (HTTP / JSON via Vite Proxy :5173)
-[ Spring Boot REST API (:8080) ]
-   ├── Web Layer (CORS Filter, Controllers)
-   ├── Service Layer (Valuation Engine, Business Logic)
-   └── Data Access Layer (Spring Data JPA Repositories)
-       │
-       ├── (Dev Profile)  ──► [ In-Memory H2 Database / Web Console ]
-       └── (Prod Profile) ──► [ PostgreSQL / MySQL Instance ]
+### Backend
+- **Language:** Java 17+
+- **Framework:** Spring Boot 3.x
+- **Core Modules:** Spring Web, Spring Data JPA, Spring Boot DevTools
+- **Build Tool:** Apache Maven (`mvnw`)
+- **Database (Dev):** H2 Database (In-Memory)
+- **Database (Prod):** PostgreSQL / MySQL
+
+### Frontend
+- **Framework:** React 18+
+- **Build Tool & Bundler:** Vite
+- **Styling:** Modular CSS3 (Flexbox/Grid, Keyframe Animations)
+- **Tooling:** Oxlint, NPM
+
+---
+
+## REST API Specification
+
+### Endpoints
+
+| Method | Endpoint | Description | Status Code |
+| :--- | :--- | :--- | :--- |
+| **GET** | `/api/portfolio` | Retrieve net worth summary, asset allocations, and return metrics | `200 OK` |
+| **GET** | `/api/assets` | Fetch all tracked assets and active holdings | `200 OK` |
+| **GET** | `/api/assets/{id}` | Retrieve details and trade history for a single asset | `200 OK` |
+| **POST** | `/api/assets` | Register a new investment holding or trade entry | `201 Created` |
+| **PUT** | `/api/assets/{id}` | Update quantity, average cost basis, or asset metadata | `200 OK` |
+| **DELETE** | `/api/assets/{id}` | Liquidate or remove an asset record from portfolio tracking | `204 No Content` |
+
+### Sample Payload (`POST /api/assets`)
+
+```json
+{
+  "ticker": "AAPL",
+  "name": "Apple Inc.",
+  "assetType": "EQUITY",
+  "quantity": 15.0,
+  "buyPrice": 182.50,
+  "currency": "USD"
+}
