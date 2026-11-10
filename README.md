@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
   <img src="https://img.shields.io/badge/Build-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Database-H2%20%7C%20PostgreSQL-4479A1?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Java%2017+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
 </p>
 
 ---
@@ -25,6 +26,8 @@ From equities and fixed-income investments to cryptocurrencies and cash holdings
 
 Built with scalability, modularity, and maintainability in mind, the project follows a decoupled frontend-backend architecture with flexible database integration.
 
+---
+
 ## ✨ Key Features
 
 - 📊 **Portfolio Analytics:** Monitor total portfolio value, net worth, and investment performance.
@@ -38,40 +41,50 @@ Built with scalability, modularity, and maintainability in mind, the project fol
 - 🔌 **RESTful API:** Structured backend endpoints with validation and CORS configuration.
 - 🧪 **Database Inspection:** Integrated H2 Web Console for inspecting database tables and queries.
 
+---
+
 ## 🚀 Core Modules & Capabilities
 
 ### 1. 📊 Dashboard Overview
+
 - Displays total portfolio value and net worth.
 - Provides percentage-based return metrics.
 - Presents investment distribution across different asset classes.
 - Offers a centralized overview of financial holdings.
 
 ### 2. 💹 Asset Allocation Engine
+
 - Organizes investments into different asset categories.
 - Supports equities, indices, commodities, and cash.
 - Provides a structured overview of portfolio distribution.
 
 ### 3. 🧾 Transaction History & Ledger
+
 - Records individual investment transactions.
 - Tracks purchase price, execution date, and order quantity.
 - Supports CRUD operations for investment records.
 - Maintains structured transaction information.
 
 ### 4. 🌐 Market Telemetry
+
 - Provides service hooks for market price integration.
 - Supports simulated market data.
 - Designed for future integration with live stock and cryptocurrency price feeds.
 
 ### 5. 🗄️ Database Web Inspector
+
 - Uses the H2 Database Console during development.
 - Allows inspection of database tables and schemas.
 - Helps monitor stored records and execute database queries.
 
 ### 6. 🎬 Animated Client Gateway
+
 - Custom CSS keyframe animations.
 - Animated loading screens during asynchronous operations.
 - Smooth transitions between dashboard states.
 - Designed to improve the overall user experience.
+
+---
 
 ## 🛠️ Technology Stack
 
@@ -99,6 +112,8 @@ Built with scalability, modularity, and maintainability in mind, the project fol
 | 🎬 CSS Keyframes | Animations and transitions |
 | 📦 NPM | Package management |
 | 🔍 Oxlint | Code quality and linting |
+
+---
 
 ## 🏗️ System Architecture
 
@@ -140,6 +155,8 @@ VestFlow follows a decoupled client-server architecture.
       |       MySQL        |
       +--------------------+
 ```
+
+---
 
 ## 🔌 REST API Documentation
 
@@ -186,6 +203,8 @@ The backend exposes RESTful endpoints to manage portfolio information and invest
 
 *Response fields may vary depending on the backend implementation.*
 
+---
+
 ## 🗄️ Database Architecture
 
 VestFlow supports flexible database configurations for different environments.
@@ -196,12 +215,15 @@ VestFlow supports flexible database configurations for different environments.
 | Production | PostgreSQL | Relational data persistence |
 | Production | MySQL | Alternative relational database |
 
-**Database Highlights:**
+### Database Highlights
+
 - Spring Data JPA integration.
 - Repository-based data access.
 - Structured investment record storage.
 - H2 Web Console for development inspection.
 - Configurable database connectivity.
+
+---
 
 ## 🎯 Project Objectives & Learning Outcomes
 
@@ -218,6 +240,8 @@ Key concepts explored:
 - Designing modular and maintainable applications.
 - Implementing responsive interfaces and CSS animations.
 
+---
+
 ## 🔮 Future Enhancements
 
 - 📡 Integrate real-time stock market and cryptocurrency APIs.
@@ -228,6 +252,8 @@ Key concepts explored:
 - 🔔 Implement price alerts and portfolio notifications.
 - 📱 Improve mobile responsiveness.
 - ☁️ Deploy the application using cloud infrastructure.
+
+---
 
 ## 👨‍💻 Project Team
 
