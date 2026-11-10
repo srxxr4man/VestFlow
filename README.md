@@ -229,14 +229,17 @@ Key concepts explored:
 - 📱 Improve mobile responsiveness.
 - ☁️ Deploy the application using cloud infrastructure.
 
-## 👨‍💻 Author
+## 👨‍💻 Project Team
 
-**A Sreeram**
-**Astin Shibu**
-**Asil Sameer**
-**Vidyasagar V S**
+<p align="center">
+  <b>Built with ❤️ by Team VestFlow</b>
+</p>
 
-🎓 Artificial Intelligence & Data Science Student
+<p align="center">
+  <b>A Sreeram</b> · <b>Astin Shibu</b> · <b>Asil Sameer</b> · <b>Vidyasagar V S</b>
+</p>
+
+🎓 Artificial Intelligence & Data Science Students
 
 💡 Interested in Full-Stack Development, Java, React, Financial Technology, and Machine Learning.
 
