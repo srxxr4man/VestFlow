@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
   <img src="https://img.shields.io/badge/Build-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Database-H2%20%7C%20PostgreSQL-4479A1?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Language-Java%2017+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Language-Java%2025-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
 </p>
 
 ---
@@ -92,7 +92,7 @@ Built with scalability, modularity, and maintainability in mind, the project fol
 
 | Technology | Purpose |
 |---|---|
-| ☕ Java 17+ | Core programming language |
+| ☕ Java 25 | Core programming language |
 | 🍃 Spring Boot 3.x | Backend application framework |
 | 🌐 Spring Web | REST API development |
 | 🗃️ Spring Data JPA | Database interaction |
